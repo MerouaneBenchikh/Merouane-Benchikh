@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main(void)
+{
+    //3 elements à prendre en compte
+int banane;
+int repasservi;
+int bananeacommander;
+// la banane, un fruit que j'adore mais que je n'ai pas l'occasion de trouver souvent au refectoire
+printf("Nombre de bananes : ");
+scanf("%i",&banane);
+//1 banane servi en dessert par repas
+printf("Nombre de personnes : ");
+scanf("%i",&repasservi);
+
+if (repasservi > banane)
+{
+    //si il n'y a plus de banane, on en commande un nombre egale à la difference entre le nombre de banane intial et le nombre de repas servi 
+    bananeacommander = repasservi - banane;
+    printf("Nombre de bananes à commander = %i.\n", bananeacommander);
+}
+else
+{
+    printf("Il n'y a pas de bananes à commander.\n");
+    // pas de banane à commander si il en reste assez 
+}
+// afin qu'il y ait une banane pour tout le monde et surtout pour moi
+return 0;
+}
